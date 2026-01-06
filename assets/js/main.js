@@ -17,7 +17,47 @@
       });
     }
     window.addEventListener('load', aosInit);
-  
+     // Hero Slider functionality
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    if (slides.length === 0) return;
+
+    // Handle index wrapping
+    if (index >= slides.length) currentSlideIndex = 0;
+    else if (index < 0) currentSlideIndex = slides.length - 1;
+    else currentSlideIndex = index;
+
+    // Update slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[currentSlideIndex].classList.add('active');
+
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[currentSlideIndex]) {
+        dots[currentSlideIndex].classList.add('active');
+    }
+}
+
+function nextSlide() { showSlide(currentSlideIndex + 1); }
+function prevSlide() { showSlide(currentSlideIndex - 1); }
+function goToSlide(index) { showSlide(index); }
+function resetTimer() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => {
+        showSlide(currentSlideIndex + 1);
+    }, 5000);
+}
+
+// Start the timer on load
+window.addEventListener('load', () => {
+    resetTimer();
+});
+
 (function() {
     "use strict";
   
@@ -79,34 +119,7 @@
         preloader.remove();
       });
     }
-       // Hero Slider functionality
-    let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-
-function showSlide(index) {
-    if (slides.length === 0) return;
-
-    // Handle index wrapping
-    if (index >= slides.length) currentSlideIndex = 0;
-    else if (index < 0) currentSlideIndex = slides.length - 1;
-    else currentSlideIndex = index;
-
-    // Update slides
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[currentSlideIndex].classList.add('active');
-
-    // Update dots
-    dots.forEach(dot => dot.classList.remove('active'));
-    if (dots[currentSlideIndex]) {
-        dots[currentSlideIndex].classList.add('active');
-    }
-}
-
-function nextSlide() { showSlide(currentSlideIndex + 1); }
-function prevSlide() { showSlide(currentSlideIndex - 1); }
-function goToSlide(index) { showSlide(index); }
-
+    
 
 // Replace the old <script> in registration.html with this:
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
@@ -130,14 +143,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         const total = tickets * 25;
         document.getElementById('disp-total').textContent = `$${total}.00 (${tickets} Ticket[s])`;
         
-// Auto-play
-let slideInterval = setInterval(nextSlide, 5000);
 
-// Optional: Reset timer when user manually clicks
-function resetTimer() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 5000);
-}
 
 /**
  * Scroll top button
