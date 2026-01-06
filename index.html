@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SPE Benin Section</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="assets/vendors/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <img src="assets/img/SPE_logo.jpg" alt="">
+
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero dark-background">
+  <div id="hero-carousel" class="slider-container">
+    
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop" alt="Event">
+      <div class="slide-overlay">
+        <div class="slide-content">
+          <span class="slide-badge">Upcoming Event</span>
+          <h1>Tech Networking Mixer 2026</h1>
+          <p class="date">February 15, 2026</p>
+          <p class="description">Connect with industry leaders and peers</p>
+          <a href="#events" class="btn-primary" onclick="showPage('events')">Register Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&h=800&fit=crop" alt="Event">
+      <div class="slide-overlay">
+        <div class="slide-content">
+          <span class="slide-badge">Upcoming Event</span>
+          <h1>Energy Innovation Summit</h1>
+          <p class="date">March 22, 2026</p>
+          <p class="description">Exploring sustainable energy solutions</p>
+          <a href="#events" class="btn-primary" onclick="showPage('events')">Register Now</a>
+        </div>
+      </div>
+    </div>
+
+     <div class="slider-nav">
+                <button class="slider-btn" onclick="prevSlide()">‹</button>
+                <button class="slider-btn" onclick="nextSlide()">›</button>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+            </div>
+  </div>
+
+  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+    <defs><path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
+    <g class="wave1"><use href="#wave-path" x="50" y="3"></use></g>
+    <g class="wave2"><use href="#wave-path" x="50" y="0"></use></g>
+    <g class="wave3"><use href="#wave-path" x="50" y="9"></use></g>
+  </svg>
+</section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section bg-light-blue">
+
+      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>Welcome to SPE Benin</p>
+        </div><!-- End Section Title -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p><strong>A Message from our Section Chairman</strong></p>
+            <p>
+              "On behalf of the Board of Directors, it is my distinct pleasure to welcome you to 
+              the official digital platform of the Society of Petroleum Engineers (SPE), 
+              Benin City Section.
+            </p>
+            <p>As we navigate the evolving landscape of the global energy sector, our section 
+              remains committed to providing a robust environment for technical exchange, 
+              professional development, and networking. From our Tech Networking Mixers to 
+              the Energy Innovation Summits, we are dedicated to equipping our members 
+              with the insights and connections needed to lead in the oil and gas industry.</p>
+            <p>
+              Whether you are a student, a young professional, 
+              or a seasoned industry veteran, there is a place for you here. 
+              I encourage you to register for our upcoming events and join us 
+              as we collectively advance the petroleum engineering 
+              profession in the Benin region and beyond."
+            </p>
+            <p><b>—Name of Chairman</b> Section Chairman, SPE Benin City Section (2025/2026)</p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/about.png" alt="" class="img-fluid">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+      <section class="bg-light-blue" id="features">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="section-title">Why Join SPE Benin?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Network</h3>
+                        <p>Connect with industry professionals and expand your career opportunities</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Learn</h3>
+                        <p>Access exclusive workshops, seminars, and training programs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💼</div>
+                        <h3>Grow</h3>
+                        <p>Develop leadership skills and advance your professional journey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!--Spotlight Section -->
+      <section class="spotlight-section" data-aos="fade" data-aos-delay="100">
+            <div class="container">
+                <h2 class="section-title">SPE Spotlight</h2>
+                
+                <div class="spotlight-container">
+                    <div class="spotlight-track" id="spotlightTrack">
+                        <div class="spotlight-card">
+                            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=250&fit=crop" alt="Energy Stream">
+                            <div class="spotlight-content">
+                                <h3>SPE Energy Stream</h3>
+                                <p><strong>UPCOMING:</strong> 07 January | SPE Live: Hydraulic Fracturing Outlook. Potential Paths for Our Energy Future.</p>
+                                <a href="#" class="btn-outline">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="spotlight-card">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=250&fit=crop" alt="OnePetro">
+                            <div class="spotlight-content">
+                                <h3>SPE Member Benefits on OnePetro</h3>
+                                <p>Did you know? SPE members receive a member discount on all conference papers, journal articles, and book content. Plus, professional members receive 10 free SPE paper downloads each year!</p>
+                                <a href="#" class="btn-outline">Discover Your Benefits</a>
+                            </div>
+                        </div>
+                        <div class="spotlight-card">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=250&fit=crop" alt="Technical Sections">
+                            <div class="spotlight-content">
+                                <h3>Technical Sections</h3>
+                                <p>Join an SPE Technical Section to connect, collaborate, and grow. Gain insights, share ideas, and enhance your expertise through global events, webinars, and projects.</p>
+                                <a href="#" class="btn-outline">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="spotlight-card">
+                            <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=400&h=250&fit=crop" alt="Renew Membership">
+                            <div class="spotlight-content">
+                                <h3>It's Time to Renew Your SPE Membership</h3>
+                                <p>Don't forget: renew your SPE membership today to maintain access to exclusive technical content, career resources, and a global network committed to advancing the energy industry.</p>
+                                <a href="#" class="btn-outline">Renew Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- /Spotlight Section-->   
+   <!-- /Services Section -->
+   <section class="bg-gradient-blue cta-section" data-aos="fade" data-aos-delay="100">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Join our community of young professionals today</p>
+                <a href="#events" class="btn-white" onclick="showPage('events')">Register for an Event</a>
+            </div>
+        </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">© 2026 SPE Benin Section.</strong> <span>All Rights
+            Reserved</span>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../../vendors/php-email-form/validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"
+    integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+    data-cf-beacon='{"rayId":"8e10a4e56ed90a6f","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"68c5ca450bae485a842ff76066d69420"}'
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
