@@ -5,7 +5,19 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+  /**
+     * Animation on scroll function and init
+     */
+    function aosInit() {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    }
+    window.addEventListener('load', aosInit);
+  
 (function() {
     "use strict";
   
@@ -148,18 +160,6 @@ function toggleScrollTop() {
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
   
-    /**
-     * Animation on scroll function and init
-     */
-    function aosInit() {
-      AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-    }
-    window.addEventListener('load', aosInit);
   
     /**
      * Initiate glightbox

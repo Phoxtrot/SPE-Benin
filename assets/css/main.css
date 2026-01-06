@@ -491,36 +491,38 @@
     transition: all 0.6s ease-out;
     width: 100%;
     height: 100vh;
+    /* Perfect Centering Logic */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
   }
+  /* Pulsing Animation */
+
   
-  #preloader:before,
-  #preloader:after {
-    content: "";
-    position: absolute;
-    border: 4px solid var(--accent-color);
-    border-radius: 50%;
-    animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
+ 
   
   #preloader:after {
     animation-delay: -0.5s;
   }
-  
-  @keyframes animate-preloader {
+  /* Pulsing Animation */
+.pulse-logo {
+    width: 150px; /* Adjust size as needed */
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes animate-preloader {
     0% {
-      width: 10px;
-      height: 10px;
-      top: calc(50% - 5px);
-      left: calc(50% - 5px);
-      opacity: 1;
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.1);
+        opacity: 1;
     }
   
     100% {
-      width: 72px;
-      height: 72px;
-      top: calc(50% - 36px);
-      left: calc(50% - 36px);
-      opacity: 0;
+      transform: scale(0.8);
+        opacity: 0.7;
     }
   }
   
